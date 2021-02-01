@@ -1,6 +1,6 @@
 <template>
     <div class="person_info" >
-          <img v-bind:src="require('../assets/images/'+ $attrs.person.name + '.jpg')" alt="img">
+          <img v-bind:src="require('../assets/images/'+ $attrs.person.name +'.jpg')" alt="img">
             <p class="year" >{{$attrs.person.birth_year}}</p>
             <h1 class="name">{{$attrs.person.name}}</h1>
             <p class="other_info">eye-color:{{$attrs.person.eye_color}}  height:{{$attrs.person.height}} mass: {{$attrs.person.mass}}</p>

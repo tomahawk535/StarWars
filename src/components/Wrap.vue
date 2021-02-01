@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="header">
-            <img :src="`${publicPath}StarWars.png`">
+            <img v-bind:src="require('../../public/StarWars.png')">
             <div class="navigation">
             <select>
                 <option selected value="En">En</option>
@@ -16,7 +16,7 @@
         </VCharacter>
       <div class="footer">
         <div class="icon">
-          <img :src="`${publicPath}StarWars.png`">
+          <img v-bind:src="require('../../public/StarWars.png')">
           <div class="social_links">
             <a href="#"><img v-bind:src="require('../assets/images/facebook.png')" alt="facebook"></a>
             <a href="#"><img v-bind:src="require('../assets/images/instagram.png')" alt="instagram"></a>
